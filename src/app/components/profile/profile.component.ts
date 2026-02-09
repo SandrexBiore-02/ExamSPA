@@ -1,11 +1,26 @@
 import { Component } from '@angular/core';
 
+interface User {
+  name: string;
+  email: string;
+  age: number;
+  location: string;
+  bio: string;
+}
+
 @Component({
   selector: 'app-profile',
-  imports: [],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.css'
+  styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
+
+  user: User = {
+    name: "San Drex Biore",
+    email: "20246263@s.ubaguio.edu",
+    age: 23,
+    location: "Ucab, Itogon, Benguet",
+    bio: "IT Student"
+  };
 
 }
