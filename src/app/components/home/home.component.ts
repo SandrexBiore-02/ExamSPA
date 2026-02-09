@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  standalone: true,
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
- title: string = "Angular SPA Project";
-  year: number = 2026;
+  title: string = "Biore's Angular SPA Project";
+  description: string = "This is a SPA built with Angular and Bootstrap and of course with AI.";
+  welcomeMessage: string = "Welcome to the SPA!";
+  year: number = new Date().getFullYear();
   isActive: boolean = true;
-
 }

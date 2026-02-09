@@ -10,11 +10,11 @@ interface User {
 
 @Component({
   selector: 'app-profile',
+  standalone: true,
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
-
   user: User = {
     name: "San Drex Biore",
     email: "20246263@s.ubaguio.edu",
@@ -22,5 +22,4 @@ export class ProfileComponent {
     location: "Ucab, Itogon, Benguet",
     bio: "IT Student"
   };
-
 }

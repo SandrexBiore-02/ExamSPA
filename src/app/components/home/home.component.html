@@ -1,6 +1,9 @@
-<h1>{{ title }}</h1>
-
-<p>Year: {{ year }}</p>
-<p>Application Active: {{ isActive }}</p>
-
-<p>Welcome to the Angular Single Page Application!</p>
+<div class="container mt-5 text-center">
+  <h1 class="display-4 mb-3">{{ title }}</h1>
+  <p class="lead">{{ description }}</p>
+  <p class="text-secondary">{{ welcomeMessage }}</p>
+  <div class="mt-4">
+    <span class="badge bg-success me-2">Year: {{ year }}</span>
+    <span class="badge bg-info">Active: {{ isActive }}</span>
+  </div>
+</div>
