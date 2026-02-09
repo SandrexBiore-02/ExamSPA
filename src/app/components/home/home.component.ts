@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+ title: string = "Angular SPA Project";
+  year: number = 2026;
+  isActive: boolean = true;
 
 }
